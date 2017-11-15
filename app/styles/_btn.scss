@@ -1,27 +1,24 @@
 #ripley-mini-site {
-
-  
     .wl {
-
-
         &-btn {
+            background-color: black;
+            color: white;
             display: inline-block;
-            padding: 10px 20px;
-            font-size: 13px;
+            font-size: 20px;
+            font-weight: bold;
+            font-family: 'Montserrat', sans-serif;
+            padding:  20px 52px;
+            position: relative;
             text-align: center;
             text-decoration: none;
             text-transform: uppercase;
-            color: $color-base;
-            position: relative;
-            border: 1px solid $color-base;
-
+            min-width: 146px;
 
             span {
                 position: relative;
                 z-index: 1;
                 transition: .2s ease-in;
             }
-
             &:after {
                 content: '';
                 width: 0;
@@ -32,32 +29,21 @@
                 color: white;
                 transition: .2s width;
                 z-index: 9;
-                background-color: $color-principal;
+                background-color: white;
             }
-
-
-
             &:hover {
-
                 span {
-                    color: white;
+                    color: black;
                     z-index: 10;
                 }
-
                 &:after {
                     width: 100%;
                 }
             }
-
-
-
             &-fill {
-                color: white;
-                background-color: $color-principal;
+                color: black;
+                background-color: white;
             }
         }
-
     }
-
-
 }

@@ -1,3 +1,70 @@
 #ripley-mini-site {
- 
+    .wl-bannerHome {
+        background-repeat: no-repeat;
+        background-size: cover !important;
+        background: url(../images/wl-bannerHome.jpg);
+        background-position: center;
+        min-height: 678px;
+        position: relative;
+        @media (max-width: $mobile) {
+            background-position: center;
+            background-size: cover;
+            min-height: 678px;
+        }
+        .wl-textoBanner {
+            color: white;
+            @media (max-width: $mobile) {
+                position: absolute;
+                bottom: 60px;
+                width: 320px;
+            }
+            h1 {
+                font-family: 'Montserrat', sans-serif;
+                line-height: 2.3em;
+                text-align: left;
+                font-weight: 800;
+                margin-top: 140px;
+                @media (max-width: $mobile) {
+                    line-height: 1.9em;
+                }
+                .firstWord {
+                    font-size: 90px;
+                    @media (max-width: $mobile) {
+                        font-size: 60px;
+                    }
+                }
+                .secondWord {
+                    font-size: 119px;
+                    @media (max-width: $mobile) {
+                        font-size: 80px;
+                    }
+                }
+                .thirdWord {
+                    font-size: 124px;
+                    @media (max-width: $mobile) {
+                        font-size: 80px;
+                    }
+                }
+            }
+            p {
+                font-size: 15px;
+                margin-bottom: 15px;
+                max-width: 430px;
+            }
+        }
+    }
+    .wl-bannerHm {
+        background-repeat: no-repeat;
+        background-size: cover !important;
+        background: url(../images/wl-bannerHm.jpg);
+        background-position: center;
+        min-height: 678px;
+        position: relative;
+        @media (max-width: $mobile) {
+            background-position: center;
+            background-size: cover;
+            min-height: 678px;
+        }
+    }
+
 }
