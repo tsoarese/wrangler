@@ -1,0 +1,9 @@
+{
+  "name": "chef-at-home",
+  "private": true,
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "^4.1.1",
+    "mocha": "^3.5.0"
+  }
+}

@@ -1,0 +1,63 @@
+#ripley-mini-site {
+
+  
+    .wl {
+
+
+        &-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 13px;
+            text-align: center;
+            text-decoration: none;
+            text-transform: uppercase;
+            color: $color-base;
+            position: relative;
+            border: 1px solid $color-base;
+
+
+            span {
+                position: relative;
+                z-index: 1;
+                transition: .2s ease-in;
+            }
+
+            &:after {
+                content: '';
+                width: 0;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                color: white;
+                transition: .2s width;
+                z-index: 9;
+                background-color: $color-principal;
+            }
+
+
+
+            &:hover {
+
+                span {
+                    color: white;
+                    z-index: 10;
+                }
+
+                &:after {
+                    width: 100%;
+                }
+            }
+
+
+
+            &-fill {
+                color: white;
+                background-color: $color-principal;
+            }
+        }
+
+    }
+
+
+}

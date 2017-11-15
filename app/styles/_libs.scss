@@ -1,0 +1,49 @@
+#ripley-mini-site {
+  
+  /*
+    ===============================================================
+    Dots slick
+    ===============================================================
+  */
+  .slick-dots {
+    text-align: center;
+    margin-top: 60px;
+
+    li {
+      text-align: center;
+      display: inline-block;
+
+      button {
+        text-indent: -9999px;
+        width: 12px;
+        height: 12px;
+        padding: 0;
+        border-radius: 50%;
+        transition: background .2s;
+        background-color: lighten($color-base, 40%);
+        display: block;
+      } 
+
+
+      &.slick-active {
+        button {
+          background-color: $color-principal;
+        }
+      }
+
+
+      & + li {
+        margin-left: 5px;
+      }
+    }
+  } 
+
+
+
+
+
+
+}
+
+
+

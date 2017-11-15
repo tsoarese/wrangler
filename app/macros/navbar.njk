@@ -1,0 +1,69 @@
+{% macro active(activePage = 'index') %}
+
+<div class="wl-header">
+  <div class="container">
+    <a class="wl-home" href="index.html" title="Ir al Home">
+      <img class="wl-logo" src="images/wrangler.png" alt="WRANGLER">
+    </a>
+    <ul class="wl-nav">
+
+      <li class="wl-menu">
+        <a href="#" class="{%if activePage == 'perfumes-mujer'
+                       or activePage == 'perfumes-hombre' %} active {% endif %}" data-func="deploySubmenuMobile">Hombre
+        </a>
+        <ul>
+          <li>
+            <a href="secundaria.html" class="{%if activePage == 'secundaria' %} active {% endif %}">Pagina Secundaria</a>
+          </li>
+          <li>
+            <a href="secundaria.html" class="{%if activePage == 'secundaria' %} active {% endif %}">Pagina Secundaria</a>
+          </li>
+        </ul>
+      </li>
+      <li class="wl-menu">
+        <a href="#" class="{%if activePage == 'perfumes-mujer'
+                       or activePage == 'perfumes-hombre' %} active {% endif %}" data-func="deploySubmenuMobile">Mujer
+        </a>
+        <ul>
+          <li>
+            <a href="secundaria.html" class="{%if activePage == 'secundaria' %} active {% endif %}">Pagina Secundaria</a>
+          </li>
+          <li>
+            <a href="secundaria.html" class="{%if activePage == 'secundaria' %} active {% endif %}">Pagina Secundaria</a>
+          </li>
+        </ul>
+      </li>
+      <li class="wl-menu">
+        <a href="#" class="{%if activePage == 'perfumes-mujer'
+                       or activePage == 'perfumes-hombre' %} active {% endif %}" data-func="deploySubmenuMobile">Demiun
+        </a>
+        <ul>
+          <li>
+            <a href="secundaria.html" class="{%if activePage == 'secundaria' %} active {% endif %}">Pagina Secundaria</a>
+          </li>
+          <li>
+            <a href="secundaria.html" class="{%if activePage == 'secundaria' %} active {% endif %}">Pagina Secundaria</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    {#
+    <ul class="wl-social">
+      <li>
+        <a data-func="shareFacebook" href="" class="wl-facebook"></a>
+      </li>
+      <li>
+        <a data-func="shareTwitter" href="https://simple.ripley.cl/" class="wl-twitter"></a>
+      </li>
+    </ul> #}
+
+    <button class="wl-offcanvas" data-func="deployMenuMobile">
+      <span></span>
+    </button>
+  </div>
+</div>
+
+
+{% endmacro %}
+

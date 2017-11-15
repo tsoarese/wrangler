@@ -1,0 +1,116 @@
+#ripley-mini-site {
+  
+  .wl {
+
+    /*
+      ===============================================================
+      Títulos
+      ===============================================================
+    */
+    &-title {
+      font-family: "especial";
+      color: $color-principal;
+      position: relative;
+      line-height: 120%;
+      text-transform: uppercase;
+      // text-align: center;
+
+
+      &:before {
+        content: '';
+        width: 46px;
+        display: block;
+        height: 1px;
+        position: absolute;
+        top: -15px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        background-color: #BEBEBE;
+      }
+
+
+      & + p {
+        margin-top: 10px;
+      }
+    }
+
+
+
+    @media (max-width: $small) {
+      &-hidden--mobile { display: none; }
+    }
+
+
+
+
+    // 
+    &-btns--center {
+      display: table;
+      margin: auto;
+    }
+
+
+
+  } //fin wl
+
+
+
+  .text-center {
+    .wl-title { padding: 0 10px; }
+  }
+
+}
+
+
+
+
+
+//Global margins: .marg-right-10 etc
+@for $i from 0 through 10 {
+    .mar-right-#{$i*10} {
+      margin-right: 10px * $i!important;
+    }
+  }
+  @for $i from 0 through 10 {
+    .mar-left-#{$i*10} {
+      margin-left: 10px * $i!important;
+    }
+  }
+  @for $i from 0 through 10 {
+    .mar-top-#{$i*10} {
+      margin-top: 10px * $i!important;
+    }
+  }
+  @for $i from 0 through 10 {
+    .mar-bottom-#{$i*10} {
+      margin-bottom: 10px * $i!important;
+    }
+  }
+  //Global paddings
+  @for $i from 0 through 10 {
+    .pad-right-#{$i*10} {
+      padding-right: 10px * $i!important;
+    }
+  }
+  @for $i from 0 through 10 {
+    .pad-left-#{$i*10} {
+      padding-left: 10px * $i!important;
+    }
+  }
+  @for $i from 0 through 10 {
+    .pad-top-#{$i*10} {
+      padding-top: 10px * $i!important;
+    }
+  }
+  @for $i from 0 through 10 {
+    .pad-bottom-#{$i*10} {
+      padding-bottom: 10px * $i!important;
+    }
+  }
+
+  .bg-color {
+    &_gray {
+      background-color: RGBA(246, 246, 246, 1.00);
+    }
+  }
+  

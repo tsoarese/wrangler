@@ -1,0 +1,79 @@
+.ripley-header {
+  margin-bottom: 0;
+}
+
+#ripley-mini-site {
+  overflow: hidden;
+  color: $color-base;
+  padding-bottom: 40px;
+
+  font: {
+    family: $font-base;
+    size: $font-size;
+    // weight: 400;
+  }
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  * {
+    outline: none!important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+
+
+  .wl-font-especial {
+    font-family: $font-especial;
+  }
+
+  .wl-color-principal {
+    color: $color-principal;
+  }
+
+  // RESET
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    margin: 0;
+  }
+
+  li {
+    list-style: none;
+  }
+
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+
+  //
+  .wl-hidden { visibility: hidden; }
+
+
+  h1,
+  .wl-h1 { font-size: $h1; }
+
+  h2,
+  .wl-h2 { font-size: $h2; }
+
+  h3,
+  .wl-h3 { font-size: $h3; }
+
+  h4,
+  .wl-h4 { font-size: $h4; }
+
+  h5,
+  .wl-h5 { font-size: $h5; }
+
+  h6,
+  .wl-h6 { font-size: $h6; }
+
+}

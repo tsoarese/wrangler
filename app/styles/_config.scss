@@ -1,0 +1,42 @@
+/*
+    ==============================
+    Colores
+    ==============================    
+*/
+$color-base:        #5F5C5C;
+$color-principal:   #04082C; 
+$color-secundario:  #EB6765;
+
+// $color-secciones: #482532;
+// $color-box: #6D394B; 
+
+
+
+/*
+    ==============================
+    General
+    ==============================    
+*/
+$font-base: "Montserrat", Helvetica, Arial, sans-serif;
+$font-size: 13px;
+$line-height: 22px;
+
+$font-especial: 'especial';
+
+$h1: 28px;
+$h2: 26px;
+$h3: 33px;
+$h4: 18px;
+$h5: 15px;
+$h6: 14px;
+
+
+
+$fulldesktop: 1100px;
+$desktop: 992px;
+$tablet:  $desktop - 1;
+$mobile:  767px;
+$small:   500px;
+
+
+$ancho-container: 1180px;
