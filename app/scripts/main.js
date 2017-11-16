@@ -53,9 +53,8 @@ window.handler.prototype = {
     self.eventsHandler($('[data-func]')); //Se ejecuta el método que permite la delegación de eventos automática desde el HTML
     self.loadProducts();
     self.slider();
-
+    self.imagesToMobile();
     $('.tabs label[for=tab2-1]').addClass('active');
-
     $('input[name=tabs-two]').on('click', function(event) {
       var id_tab = $(this).attr('id');
       $('.tabs label').removeClass('active');
@@ -401,7 +400,7 @@ window.handler.prototype = {
     var self = this;
 
     var $contenedor = $(contenedor_principal);
-    var $boxs = $contenedor.find('.rpe-product-thumb');
+    var $boxs = $contenedor.find('.wl-product-thumb');
 
     $.each($boxs, function(index, element) {
       var $box = $(element);
@@ -418,14 +417,14 @@ window.handler.prototype = {
           var name_producto = producto[0]['name'];
           var linkToProduct = producto[0]['link'];
           if (name_producto) {
-            $box.find('.rpe-product__name').html(name_producto);
+            $box.find('.wl-product__name').html(name_producto);
           }
           if (imagen) {
-            $box.find('.rpe-product__img').attr({'src': imagen, 'alt': name_producto});
+            $box.find('.wl-product__img').attr({'src': imagen, 'alt': name_producto});
           }
           if (linkToProduct) {
             var finalLink = 'https://simple.ripley.cl/' + linkToProduct;
-            $box.find('.rpe-product').attr({'href': finalLink, 'alt': name_producto});
+            $box.find('.wl-product').attr({'href': finalLink, 'alt': name_producto});
           }
         });
 
@@ -436,14 +435,14 @@ window.handler.prototype = {
           var discount =  prices[0]['discount'];
 
           if (!discount && (normalPrice === internetPrice)) {
-            $box.find('.rpe-normal').remove();
-            $box.find('.rpe-internet').html('Precio Internet: ' + internetPrice);
+            $box.find('.wl-normal').remove();
+            $box.find('.wl-internet').html('Precio Internet: ' + internetPrice);
           } else if (normalPrice) {
-            $box.find('.rpe-normal').html('Precio Normal: ' + normalPrice);
+            $box.find('.wl-normal').html('Precio Normal: ' + normalPrice);
           }
 
           if (normalPrice != internetPrice) {
-            $box.find('.rpe-internet').html('Precio Internet: ' + internetPrice);
+            $box.find('.wl-internet').html('Precio Internet: ' + internetPrice);
           }
 
           if (otarPrice) {
@@ -669,7 +668,7 @@ window.handler.prototype = {
     var element = $(event.currentTarget);
 
     element.toggleClass('wl-offcanvas--active');
-    $('.rpe-nav').toggleClass('rpe-nav--active');
+    $('.wl-nav').toggleClass('wl-nav--active');
   },
   deploySubmenuMobile: function(event) {
     event.preventDefault();
@@ -688,7 +687,7 @@ window.handler.prototype = {
     }
   },
   slider: function(event) {
-    $('.rpe-slick').slick({
+    $('.wl-slick').slick({
       dots: true,
       infinite: true,
       speed: 300,
@@ -719,7 +718,27 @@ window.handler.prototype = {
         }
       ]
     });
-  }
+  },
+  imagesToMobile: function() {
+    if ($(window).width() <= 768) {
+      var toMobile = $('[data-to-mobile]');
+
+      console.log(toMobile);
+
+      toMobile.each(function(index, el) {
+        var source = $(el).data('source');
+        source = source.replace(/(\.[\w\d_-]+)$/i, '-m$1');
+        $(el).attr('src', url + source);
+      });
+    } else {
+      var toMobile = $('[data-to-mobile]');
+
+      toMobile.each(function(index, el) {
+        var source = $(el).data('source');
+        $(el).attr('src', url + source);
+      });
+    }
+  },
 };
 
 /////////////////////////////////////////////////////////////////////////////////////////////
