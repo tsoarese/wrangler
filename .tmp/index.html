@@ -16,7 +16,7 @@
 
     <mini-site-styles>
       <!-- build:css styles/main.css -->
-      <link rel="stylesheet" href="styles/main.css">
+      <link rel="stylesheet" href="styles/main.css">     
       <link rel="stylesheet" href="https://home.ripley.cl/front/public/css/app-44388974b8.css">
       <!-- endbuild -->
     </mini-site-styles>
@@ -83,15 +83,15 @@
 
 
 
-<section class="wl-bannerHome ">
+<section class="wl-bannerHome">
   <div class="container wl-textoBanner">
-    <h1>
+    <h2>
       <span class="firstWord">SEVENTY</span>
       <br/>
       <span class="secondWord">YOUNG</span>
       <br/>
-      <span class="thirdWord">YEARS</span>      
-    </h1>
+      <span class="thirdWord">YEARS</span>
+    </h2>
     <p>Únete a nosotros en esta celebración Wrangler llegó a 70 años, mejor que nunca.</p>
     <a class="wl-btn" href="#" title="Conoce más">
       <span>CONOCE MÁS</span>
@@ -100,29 +100,109 @@
 </section>
 
 <section class="wl-bannerHm">
-  <div class="container wl-textoBanner">
-    <h1>¿QUÉ DESEAS VER?</h1>
-    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
-    <div class="row">
-      <div class="col-md-6">
+  <h2>¿QUÉ DESEAS VER?</h2>
+  <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+  <div class="bottoms">
     <a class="wl-btn" href="#" title="Conoce más">
       <span>HOMBRE</span>
     </a>
-  </div>  
-  <div class="col-md-6">
     <a class="wl-btn" href="#" title="Conoce más">
       <span>MUJER</span>
     </a>
+
   </div>
+
+</section>
+
+<section class="wl-denim container">
+  <div class="row">
+    <div class="col-lg-5">
+      <div class="wl-deminContent">
+        <h2>DENIM</h2>
+        <p class="paragraph">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
+          eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. enim ipsam voluptatem
+          quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolos eos qui ratione voluptatem sequi.</p>
+        <h6>Conoce nuestras líneas de</h6>
+        <div class="wl-iconos">
+          <div class="wl-iconos__container">
+            <object type="image/svg+xml" data="../images/svg/icono.svg">
+              Tu navegador no soporta imagenes svg
+            </object>
+            <p>ICONOS</p>
+          </div>
+          <div class="wl-iconos__container">
+            <object type="image/svg+xml" data="../images/svg/jeans.svg">
+              Tu navegador no soporta imagenes svg
+            </object>
+            <p>JEANS</p>
+          </div>
+          <div class="wl-iconos__container">
+            <object type="image/svg+xml" data="../images/svg/chaquetas.svg">
+              Tu navegador no soporta imagenes svg
+            </object>
+            <p>CHAQUETAS</p>
+          </div>
+
+        </div>
+        <a class="wl-btn" href="#" title="Conoce más">
+          <span>VER MAS</span>
+        </a>
+      </div>
+    </div>
+    <div class="col-lg-7">
+      <div class="wl-deminBackground">
+        <!-- Swiper -->
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="../images/wl-deminSlider_img1.jpg">
+              <p>Slider 1</p>
+            </div>
+            <div class="swiper-slide">
+              <img src="../images/wl-deminSlider_img1.jpg">
+              <p>Slider 2</p>
+            </div>
+            <div class="swiper-slide">
+              <img src="../images/wl-deminSlider_img1.jpg">
+              <p>Slider 3</p>
+            </div>
+          </div>
+          <!-- Add Pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
   </div>
+
+</section>
+
+<section class="wl-destacados">
+  <h2>Destacados</h2>
+  <p class="subTitulo">LOREM IPSUM DOLOR SIT AMET</p>
+  <div class="tabsContainer">
+      <div class="tabs">
+          <div class="tab-2">
+            <label id="hombre" for="tab2-1">Hombre</label>
+            <input id="tab2-1" name="tabs-two" type="radio" checked="checked">
+            <div class="cardsContainer">
+              <h4>Tab One</h4>
+              <p>Content One asd asdadsads ads fgadsfgdasads adsdsaadsfgfgads ads fgdsaadsdsa dsfg dg adsads ads ads  ads ads ads asd ds ads ads ads ds ad ads ads  dgaads</p>
+            </div>         
+          </div>
+          <div class="tab-2">
+            <label id="mujer" for="tab2-2">Mujer</label>
+            <input id="tab2-2" name="tabs-two" type="radio">            
+            <div class="cardsContainer">
+              <h4>Tab Two</h4>
+              <p>Content Two</p>
+            </div>
+          </div>
+        </div>
   </div>
+ 
 </section>
 
 
-<br/>
-<br/>
-<br/>
-<br/> 
       </div>
     </div>
   </mini-site>
@@ -130,7 +210,26 @@
   <mini-site-scripts>
     <!-- build:js scripts/vendor.js -->
     <script src="/scripts/libs/jquery.js"></script>
-    <script src="/scripts/libs/slick.min.js"></script>
+    <script src="/scripts/libs/swiper.min.js"></script>
+     <script>
+    var swiper = new Swiper('.swiper-container', {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
+   <script src="/scripts/libs/slick.min.js"></script>
     <!-- bower:js -->
     <!-- endbower -->
     <!-- endbuild -->

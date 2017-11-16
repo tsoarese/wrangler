@@ -53,6 +53,14 @@ window.handler.prototype = {
     self.eventsHandler($('[data-func]')); //Se ejecuta el método que permite la delegación de eventos automática desde el HTML
     self.loadProducts();
     self.slider();
+
+    $('.tabs label[for=tab2-1]').addClass('active');
+
+    $('input[name=tabs-two]').on('click', function(event) {
+      var id_tab = $(this).attr('id');
+      $('.tabs label').removeClass('active');
+      $('.tabs label[for='+id_tab+']').addClass('active');
+    });
   },
   //Funciones que se inicializan en el window.load
   onLoadSetup: function() {
@@ -393,7 +401,7 @@ window.handler.prototype = {
     var self = this;
 
     var $contenedor = $(contenedor_principal);
-    var $boxs = $contenedor.find('.wl-product-thumb');
+    var $boxs = $contenedor.find('.rpe-product-thumb');
 
     $.each($boxs, function(index, element) {
       var $box = $(element);
@@ -410,14 +418,14 @@ window.handler.prototype = {
           var name_producto = producto[0]['name'];
           var linkToProduct = producto[0]['link'];
           if (name_producto) {
-            $box.find('.wl-product__name').html(name_producto);
+            $box.find('.rpe-product__name').html(name_producto);
           }
           if (imagen) {
-            $box.find('.wl-product__img').attr({'src': imagen, 'alt': name_producto});
+            $box.find('.rpe-product__img').attr({'src': imagen, 'alt': name_producto});
           }
           if (linkToProduct) {
             var finalLink = 'https://simple.ripley.cl/' + linkToProduct;
-            $box.find('.wl-product').attr({'href': finalLink, 'alt': name_producto});
+            $box.find('.rpe-product').attr({'href': finalLink, 'alt': name_producto});
           }
         });
 
@@ -428,14 +436,14 @@ window.handler.prototype = {
           var discount =  prices[0]['discount'];
 
           if (!discount && (normalPrice === internetPrice)) {
-            $box.find('.wl-normal').remove();
-            $box.find('.wl-internet').html('Precio Internet: ' + internetPrice);
+            $box.find('.rpe-normal').remove();
+            $box.find('.rpe-internet').html('Precio Internet: ' + internetPrice);
           } else if (normalPrice) {
-            $box.find('.wl-normal').html('Precio Normal: ' + normalPrice);
+            $box.find('.rpe-normal').html('Precio Normal: ' + normalPrice);
           }
 
           if (normalPrice != internetPrice) {
-            $box.find('.wl-internet').html('Precio Internet: ' + internetPrice);
+            $box.find('.rpe-internet').html('Precio Internet: ' + internetPrice);
           }
 
           if (otarPrice) {
@@ -661,7 +669,7 @@ window.handler.prototype = {
     var element = $(event.currentTarget);
 
     element.toggleClass('wl-offcanvas--active');
-    $('.wl-nav').toggleClass('wl-nav--active');
+    $('.rpe-nav').toggleClass('rpe-nav--active');
   },
   deploySubmenuMobile: function(event) {
     event.preventDefault();
@@ -680,7 +688,7 @@ window.handler.prototype = {
     }
   },
   slider: function(event) {
-    $('.wl-slick').slick({
+    $('.rpe-slick').slick({
       dots: true,
       infinite: true,
       speed: 300,

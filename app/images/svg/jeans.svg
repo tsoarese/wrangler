@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="46px" height="74px" viewBox="0 0 46 74" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 34</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-256.000000, -2096.000000)" stroke="#979797" stroke-width="2">
+            <g id="Group-41" transform="translate(132.000000, 2095.000000)">
+                <g id="Group-38" transform="translate(125.000000, 2.000000)">
+                    <g id="Group-34" transform="translate(1.000000, 0.000000)">
+                        <path d="M3.13028169,5 L39.8844991,5" id="Line-4" stroke-linecap="square"></path>
+                        <path d="M22,30 L22,19" id="Line-5" stroke-linecap="square"></path>
+                        <rect id="Rectangle-9" x="19" y="5" width="4" height="13"></rect>
+                        <polygon id="Path-2" points="2.6274123 0 39.6413677 0 42 72 28.6107471 72 20.7388026 28.6423358 13.3892529 72 0 72"></polygon>
+                        <path d="M3,13 C8.94594595,11.8648649 12.2792793,8.86486486 13,4" id="Path-3"></path>
+                        <path d="M29,14 C34.9459459,12.8648649 38.2792793,9.86486486 39,5" id="Path-3" transform="translate(34.000000, 9.500000) scale(-1, 1) translate(-34.000000, -9.500000) "></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

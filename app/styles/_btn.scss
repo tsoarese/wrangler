@@ -1,18 +1,18 @@
 #ripley-mini-site {
     .wl {
         &-btn {
-            background-color: black;
-            color: white;
+            background-color: $color-principal;
+            color: $color-secundario;
             display: inline-block;
             font-size: 20px;
             font-weight: bold;
             font-family: 'Montserrat', sans-serif;
-            padding:  20px 52px;
+            padding:  15px 50px;
             position: relative;
             text-align: center;
             text-decoration: none;
             text-transform: uppercase;
-            min-width: 146px;
+            min-width: 250px;
 
             span {
                 position: relative;
@@ -26,14 +26,14 @@
                 position: absolute;
                 top: 0;
                 left: 0;
-                color: white;
+                color: $color-secundario;
                 transition: .2s width;
                 z-index: 9;
-                background-color: white;
+                background-color: $color-secundario;
             }
             &:hover {
                 span {
-                    color: black;
+                    color: $color-principal;
                     z-index: 10;
                 }
                 &:after {
@@ -41,8 +41,8 @@
                 }
             }
             &-fill {
-                color: black;
-                background-color: white;
+                color: $color-principal;
+                background-color: $color-secundario;
             }
         }
     }

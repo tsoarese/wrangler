@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="76px" height="76px" viewBox="0 0 76 76" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 37</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-362.000000, -2094.000000)" stroke="#979797" stroke-width="2">
+            <g id="Group-41" transform="translate(132.000000, 2095.000000)">
+                <g id="Group-39" transform="translate(226.000000, 1.000000)">
+                    <g id="Group-37" transform="translate(6.000000, 0.000000)">
+                        <path d="M16.5012331,32.8738739 L11.4020717,73 L0,73 L8.7025156,13.8828829 C11.9019895,8.98198198 17.0011509,6.02102102 24,5" id="Path-6"></path>
+                        <path d="M64.5012331,32.8738739 L59.4020717,73 L48,73 L56.7025156,13.8828829 C59.9019895,8.98198198 65.0011509,6.02102102 72,5" id="Path-6" transform="translate(60.000000, 39.000000) scale(-1, 1) translate(-60.000000, -39.000000) "></path>
+                        <polyline id="Path-7" points="17 33.3119266 17.322314 67 55.3553719 67 56 33"></polyline>
+                        <path d="M10.8589744,68.9 L1.14102564,68.1" id="Line-8" stroke-linecap="square"></path>
+                        <path d="M60.1486486,68.8333333 L69.8513514,68.1666667" id="Line-9" stroke-linecap="square"></path>
+                        <path d="M17.1730769,46.1521739 L25.8269231,52.8478261" id="Line-10" stroke-linecap="square"></path>
+                        <path d="M54.8478261,46.1578947 L48.1521739,51.8421053" id="Line-11" stroke-linecap="square"></path>
+                        <polyline id="Line-12" stroke-linecap="square" points="38 66 41.7590361 35.704918 51 13.911007 43.4819277 0"></polyline>
+                        <polyline id="Line-13" stroke-linecap="square" points="28.3265306 0 18 17.2687225 41 35"></polyline>
+                        <path d="M41.8414634,34.8451327 L29.1585366,0.154867257" id="Line-14" stroke-linecap="square"></path>
+                        <path d="M38.15,25.8433735 L43.85,0.156626506" id="Line-15" stroke-linecap="square"></path>
+                        <path d="M40.8428571,7.5 L32.1571429,7.5" id="Line-16" stroke-linecap="square"></path>
+                        <path d="M29.1595745,0.5 L43.854295,0.5" id="Line-17" stroke-linecap="square"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

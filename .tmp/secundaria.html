@@ -16,7 +16,7 @@
 
     <mini-site-styles>
       <!-- build:css styles/main.css -->
-      <link rel="stylesheet" href="styles/main.css">
+      <link rel="stylesheet" href="styles/main.css">     
       <link rel="stylesheet" href="https://home.ripley.cl/front/public/css/app-44388974b8.css">
       <!-- endbuild -->
     </mini-site-styles>
@@ -94,7 +94,26 @@
   <mini-site-scripts>
     <!-- build:js scripts/vendor.js -->
     <script src="/scripts/libs/jquery.js"></script>
-    <script src="/scripts/libs/slick.min.js"></script>
+    <script src="/scripts/libs/swiper.min.js"></script>
+     <script>
+    var swiper = new Swiper('.swiper-container', {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
+   <script src="/scripts/libs/slick.min.js"></script>
     <!-- bower:js -->
     <!-- endbower -->
     <!-- endbuild -->
