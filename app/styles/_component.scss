@@ -173,7 +173,7 @@
         @media (max-width: $tablet) {
             margin-top: 40px;
         }
-        .swiper-slide {          
+        .swiper-slide {
             img {
                 width: 100%;
             }
@@ -186,141 +186,58 @@
         }
     }
     .wl-destacados {
-        h2{
+        h2 {
             text-align: center;
             color: $color-principal;
             font-weight: bold;
             text-transform: uppercase;
             font-size: 40px;
         }
-        p.subTitulo{
+        p.subTitulo {
             color: $color-principal;
             font-size: $pNormal;
             text-align: center;
             margin-bottom: 40px;
         }
-        .tabsContainer {
-            .tabs {
-                display: block;
-                display: -webkit-flex;
-                display: -moz-flex;
-                display: flex;
-                -webkit-flex-wrap: wrap;
-                -moz-flex-wrap: wrap;
-                flex-wrap: wrap;
-                margin: 0;
-                overflow: hidden;
+        .wl-product {
+            text-decoration: none;
+            display: block;
+            text-align: center;
+            padding-bottom: 10px;
+            border: 1px solid transparent;
+            &:hover {
+                border-color: #DDD;
             }
-            .tabs [class^="tab"] label,
-            .tabs [class*=" tab"] label {
-                color: black;
-                cursor: pointer;
-                display: block;
-                font-size: 20px;
-                font-weight: bold;
+            .wl-product__text {
+                margin-top: 10px;
+            }
+            h3 {
+                color: #5F5C5C;
                 text-transform: uppercase;
-                line-height: 60px;
-                text-align: center;
+                font-size: 14px;
+                min-height: 55px;
+                line-height: 110%;
+                &:hover h3 {
+                    color: #04082C;
+                }
             }
-            .tabs [class^="tab"] [type="radio"],
-            .tabs [class*=" tab"] [type="radio"] {
-                // border-bottom: 1px solid rgba(239, 237, 239, 0.5);
-                border: none;
-                cursor: pointer;
-                -webkit-appearance: none;
-                -moz-appearance: none;
-                appearance: none;
-                display: block;
-                width: 100%;
-                -webkit-transition: all 0.3s ease-in-out;
-                -moz-transition: all 0.3s ease-in-out;
-                -o-transition: all 0.3s ease-in-out;
-                transition: all 0.3s ease-in-out;
+            p {
+                font-size: 12px;
             }
-            .tabs [class^="tab"] [type="radio"]:hover,
-            .tabs [class^="tab"] [type="radio"]:focus,
-            .tabs [class*=" tab"] [type="radio"]:hover,
-            .tabs [class*=" tab"] [type="radio"]:focus {
-                
-               // border-bottom: 1px solid #fd264f;
+            .wl-internet {
+                color: #EB6765;
             }
-            .tabs [class^="tab"] [type="radio"]:checked,
-            .tabs [class*=" tab"] [type="radio"]:checked {
-                background-color: black;
-                height: 60px;
+            .wl-normal {
+                color: #5F5C5C;
+            }
+            img {
+                display: inline-block;
                 position: relative;
-                bottom: 60px;
-                border-radius: 0;
-                z-index: -1;
-            }
-            .tabs [class^="tab"] [type="radio"]:checked+div,
-            .tabs [class*=" tab"] [type="radio"]:checked+div {
-                opacity: 1;
-            }
-            .tabs [class^="tab"] [type="radio"]+div,
-            .tabs [class*=" tab"] [type="radio"]+div {
-                display: block;
-                opacity: 0;
-                padding: 2rem 0;
-                width: 90%;
-                -webkit-transition: all 0.3s ease-in-out;
-                -moz-transition: all 0.3s ease-in-out;
-                -o-transition: all 0.3s ease-in-out;
-                transition: all 0.3s ease-in-out;
-            }
-            .tabs .tab-2 {
-                width: 50%;
-                position: relative;
-                label.active{
-                    color: white;
-                    border: none;                   
-                    box-shadow: none;                    
+                transition: .3s ease-in-out;
+                &:hover img {
+                    opacity: .8;
                 }
-                label#hombre{
-                    margin-left: auto;
-                    margin-right: 15px;
-                }
-                input#tab2-1{
-                    margin-left: auto;
-                    margin-right: 15px;
-                }
-                label{
-                    -webkit-box-shadow: inset 0px  0px  0px  3px  $color-base;
-                    -moz-box-shadow: inset  0px  0px  0px  3px  $color-base;
-                    box-shadow: inset  0px  0px  0px  3px $color-base;                    
-                    //border: 3px solid $color-base ;                 
-                    color: $color-base ;
-                    max-width: 250px;
-                    //margin: auto;
-                }           
-                input{
-                    max-width: 250px;
-                   // margin: auto;
-                }
-                .cardsContainer{
-                    position: relative;
-                    border: 3px solid red;
-                    width: 100%;
-                    min-height: 600px;
-                    content: '.';
-                }
-            }
-            .tabs .tab-2 [type="radio"]+div {
-                width: 200%;
-                margin-left: 200%;
-            }
-            .tabs .tab-2 [type="radio"]:checked+div {
-                margin-left: 0;
-            }
-            .tabs .tab-2:last-child [type="radio"]+div {
-                margin-left: 100%;
-            }
-            .tabs .tab-2:last-child [type="radio"]:checked+div {
-                margin-left: -100%;
             }
         }
     }
 }
-
-
-

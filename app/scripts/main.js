@@ -44,7 +44,7 @@ window.handler = function() {
   var self = this;
 };
 
-//Se almacenan las funciones dentro del prototipo del objeto por convención, recomendación y performance por sobre todo
+  //Se almacenan las funciones dentro del prototipo del objeto por convención, recomendación y performance por sobre todo
 window.handler.prototype = {
   //Funciones que se inicializan en el document.ready
   onReadySetup: function() {

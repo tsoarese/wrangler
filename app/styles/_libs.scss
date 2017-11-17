@@ -1,27 +1,124 @@
 #ripley-mini-site {
-.wl-deminBackground{
-  .swiper-container {
+  .wl-deminBackground {
+    .swiper-container {
+      width: 100%;
+      height: 100%;
+      max-height: 542px;
+    }
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+  }
+  .tabs {
+    margin: 1em 0 2em;
+    overflow: hidden;
+    position: relative;
     width: 100%;
-    height: 100%;
-    max-height: 542px;
+    font-weight: 300;
+    nav {
+      text-align: center;
+      a {
+        color: #CCC;
+        display: block;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.45em;
+        font-size: 20px;
+        font-weight: bold;
+        line-height: 2.5;
+        line-height: 60px;
+        padding: 0 1.25em;
+        text-transform: uppercase;
+        white-space: nowrap;
+        transition: all 0.3s ease-in;
+        &:hover {
+          color: black;
+          transition: all 0.3s ease-in;
+        }
+      }
+      ul {
+        display: inline-block;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        li {
+          box-shadow: inset 0px 0px 0 3px #ccc;
+          display: block;
+          float: left;
+          margin: 0 0.25em;
+          min-width: 250px;
+          position: relative;
+          transition: all 0.3s ease-in;
+          &:hover {
+            box-shadow: inset 0px 0px 0 3px black;
+            transition: all 0.3s ease-in;
+          }
+          &.tab-current {
+            background-color: black;
+            border-bottom: none;
+            box-shadow: none;
+            z-index: 1;
+            a {
+              color: #fff;
+            }
+          }
+          /*&.tab-current:before,
+        &.tab-current:after {
+          content: '';
+          background: #47a3da;
+          bottom: 0;
+          height: 1px;
+          position: absolute;
+          right: 100%;
+          width: 1000px;
+        }*/
+          &.tab-current:after {
+            left: 100%;
+            right: auto;
+            width: 4000px;
+          }
+        }
+      }
+    }
+    .content {
+      section {
+        font-size: 1.25em;
+        padding: 3em 1em;
+        display: none;
+        max-width: 1230px;
+        margin: 0 auto;
+      }
+      section:before,
+      section:after {
+        content: '';
+        display: table;
+      }
+      section:after {
+        clear: both;
+      }
+    }
   }
-  .swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-    /* Center slide text vertically */
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
+  /* Fallback example */
+  .no-js .content section {
+    display: block;
+    padding-bottom: 2em;
+    border-bottom: 1px solid #47a3da;
   }
-}
+  .content section.content-current {
+    display: block;
+  }
 }
