@@ -53,19 +53,74 @@
             }
         }
     }
+    .wl-banner{
+        #slider1 {
+            background: #D8D8D8;
+            z-index: 0;
+            .container {
+                min-height: 676px;
+                @media (max-width: $mobile) {
+                    min-height: unset;
+                }
+            }
+            .mujer {
+                color: $color-principal;
+                text-align: left;
+                z-index: 1;
+                padding-bottom: 15px;
+                @media (max-width: $mobile) {
+                    text-align: center;
+                }
+                h2 {
+                    padding-top: 70px;
+                    font-family: 'Montserrat', sans-serif;
+                    font-weight: 800;
+                    line-height: 2.3em;
+                    .firstWord {
+                        font-size: 90px;
+                        @media (max-width: $mobile) {
+                            font-size: 60px;
+                        }
+                    }
+                    .secondWord {
+                        font-size: 119px;
+                        @media (max-width: $mobile) {
+                            font-size: 80px;
+                        }
+                    }
+                    .thirdWord {
+                        font-size: 124px;
+                        @media (max-width: $mobile) {
+                            font-size: 80px;
+                        }
+                    }
+                }
+                p {
+                    margin: 15px 0;
+                    span{
+                        font-weight: bold;
+                    }
+                }
+            }
+            .imgSlider1 {
+                position: absolute;
+                top: 0px;
+                right: 0px;
+                z-index: -1;
+            }
+        }
+    }
     .wl-bannerHm {
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover !important;
-        background: url(../images/wl-bannerHm.jpg);
-        color: $color-principal;
-        min-height: 678px;
+        background: #D3E0F1;
+        color: $color-principal; //min-height: 678px;
         position: relative;
         text-align: center;
         @media (max-width: $mobile) {
             background-position: center;
-            background-size: cover;
-            min-height: 678px;
+            background-size: cover; //min-height: 678px;
         }
         h2 {
             font-size: 60px;
@@ -77,6 +132,7 @@
         }
         p {
             font-size: $p;
+            margin-bottom: 15px;
             @media (max-width: $mobile) {
                 font-size: $pMobil;
             }
@@ -89,6 +145,7 @@
             flex-flow: row nowrap;
             justify-content: space-around;
             align-content: center;
+            z-index: 1;
             @media (max-width: $mobile) {
                 position: relative;
                 bottom: 0;
@@ -103,6 +160,10 @@
                 min-height: auto;
                 margin-bottom: 10px;
             }
+        }
+        img {
+            position: relative;
+            top: 4px;
         }
     }
     .wl-denim {
@@ -199,6 +260,22 @@
             text-align: center;
             margin-bottom: 40px;
         }
+        .tabs {
+            ul {
+                @media (max-width: $mobile) {
+                    display: flex;
+                    flex-direction: column;
+                }
+                li {
+                    @media (max-width: $mobile) {
+                        max-width: 250px;
+                        justify-content: center;
+                        margin: auto;
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
         .wl-product {
             text-decoration: none;
             display: block;
@@ -238,6 +315,29 @@
                     opacity: .8;
                 }
             }
+        }
+    }
+    .wl-social {
+        .iconosSocial {
+            display: flex;
+            justify-content: center;
+            div:nth-child(2) {
+                margin: 0 15px;
+            }
+        }
+    }
+    .wl-logo {
+        align-items: center;
+        display: flex;
+        margin: auto;
+        max-width: 750px;
+        hr {
+            border: solid #ccc 1px;
+            flex: 1 1 auto;
+            height: 0px;
+        }
+        img {
+            margin: 15px 20px;
         }
     }
 }

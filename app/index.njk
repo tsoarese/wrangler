@@ -1,4 +1,7 @@
-{% extends "layouts/default.njk" %} {% block content %} {% import 'macros/navbar.njk' as nav %} {{nav.active('index')}}
+{% extends "layouts/default.njk" %} {% block content %}
+{% import 'macros/product-thumb.njk' as field %}
+{% import 'macros/navbar.njk' as nav %} 
+{{nav.active('index')}}
 
 <section class="wl-bannerHome">
   <div class="container wl-textoBanner">
@@ -19,6 +22,7 @@
 <section class="wl-bannerHm">
   <h2>¿QUÉ DESEAS VER?</h2>
   <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+  
   <div class="bottoms">
     <a class="wl-btn" href="#" title="Conoce más">
       <span>HOMBRE</span>
@@ -28,12 +32,12 @@
     </a>
 
   </div>
-
+  <img src="../images/wl-pareja.png" alt="">
 </section>
 
 <section class="wl-denim container">
   <div class="row">
-    <div class="col-lg-5">
+    <div class="col-lg-6">
       <div class="wl-deminContent">
         <h2>DENIM</h2>
         <p class="paragraph">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
@@ -66,7 +70,7 @@
         </a>
       </div>
     </div>
-    <div class="col-lg-7">
+    <div class="col-lg-6">
       <div class="wl-deminBackground">
         <!-- Swiper -->
         <div class="swiper-container">
@@ -114,86 +118,64 @@
     </nav>
     <div class="content">
       <section id="hombre">
-        <div class="wl-product-thumb col-sm-3 col-xs-6" data-product="2000341309044">
-          <a href="#;" title="" class="wl-product" target="_blank">
-            <div class="wl-product__image">
-              <img class="wl-product__img" src="" alt="">
-            </div>
-            <div class="wl-product__text">
-              <h3 class="wl-product__name">LABIAL PURE COLOR LIFE</h3>
-              <p class="wl-normal">Precio Normal: $26.990</p>
-              <p class="wl-internet">Internet: $16.990</p>
-            </div>
-          </a>
-        </div>
-        <div class="wl-product-thumb col-sm-3 col-xs-6" data-product="2000341309044">
-          <a href="#;" title="" class="wl-product" target="_blank">
-            <div class="wl-product__image">
-              <img class="wl-product__img" src="" alt="">
-            </div>
-            <div class="wl-product__text">
-              <h3 class="wl-product__name">LABIAL PURE COLOR LIFE</h3>
-              <p class="wl-normal">Precio Normal: $26.990</p>
-              <p class="wl-internet">Internet: $16.990</p>
-            </div>
-          </a>
-        </div>
-        <div class="wl-product-thumb col-sm-3 col-xs-6" data-product="2000341309044">
-          <a href="#;" title="" class="wl-product" target="_blank">
-            <div class="wl-product__image">
-              <img class="wl-product__img" src="" alt="">
-            </div>
-            <div class="wl-product__text">
-              <h3 class="wl-product__name">LABIAL PURE COLOR LIFE</h3>
-              <p class="wl-normal">Precio Normal: $26.990</p>
-              <p class="wl-internet">Internet: $16.990</p>
-            </div>
-          </a>
-        </div>
-        <div class="wl-product-thumb col-sm-3 col-xs-6" data-product="2000341309044">
-          <a href="#;" title="" class="wl-product" target="_blank">
-            <div class="wl-product__image">
-              <img class="wl-product__img" src="" alt="">
-            </div>
-            <div class="wl-product__text">
-              <h3 class="wl-product__name">LABIAL PURE COLOR LIFE</h3>
-              <p class="wl-normal">Precio Normal: $26.990</p>
-              <p class="wl-internet">Internet: $16.990</p>
-            </div>
-          </a>
+        <div class="row">
+            {{ field.field('2000341309044') }}
+            {{ field.field('2000341309044') }}
+            {{ field.field('2000341309044') }}
+            {{ field.field('2000341309044') }}       
         </div>
       </section>
       <section id="mujer">
-        <div class="wl-product-thumb col-sm-3 col-xs-6" data-product="2000341309044">
-          <a href="#;" title="" class="wl-product" target="_blank">
-            <div class="wl-product__image">
-              <img class="wl-product__img" src="" alt="">
-            </div>
-            <div class="wl-product__text">
-              <h3 class="wl-product__name">LABIAL PURE COLOR LIFE</h3>
-              <p class="wl-normal">Precio Normal: $26.990</p>
-              <p class="wl-internet">Internet: $16.990</p>
-            </div>
-          </a>
-        </div>
-        <div class="wl-product-thumb col-sm-3 col-xs-6" data-product="2000341309044">
-          <a href="#;" title="" class="wl-product" target="_blank">
-            <div class="wl-product__image">
-              <img class="wl-product__img" src="" alt="">
-            </div>
-            <div class="wl-product__text">
-              <h3 class="wl-product__name">LABIAL PURE COLOR LIFE</h3>
-              <p class="wl-normal">Precio Normal: $26.990</p>
-              <p class="wl-internet">Internet: $16.990</p>
-            </div>
-          </a>
-        </div>
+          <div class="row">
+              {{ field.field('2000341309044') }}
+              {{ field.field('2000341309044') }}
+              {{ field.field('2000341309044') }}
+              {{ field.field('2000341309044') }}       
+          </div>
+          <div class="row">
+              {{ field.field('2000341309044') }}
+              {{ field.field('2000341309044') }}
+              {{ field.field('2000341309044') }}
+              {{ field.field('2000341309044') }}       
+          </div>
+
       </section>
     </div>
     <!-- /content -->
   </div>
   <!-- /tabs -->
 
+
+</section>
+
+<section class="wl-social">
+  <div class="iconosSocial">
+    <div class="wl-iconos__container">
+      <a href="#">
+        <img src="../images/svg/icon-fb.svg">
+        </img>
+      </a>
+
+    </div>
+    <div class="wl-iconos__container">
+      <a href="#">
+        <img src="../images/svg/icon-insta.svg">
+        </img>
+      </a>
+
+    </div>
+    <div class="wl-iconos__container">
+      <a href="#">
+        <img src="../images/svg/icon-you.svg">
+        </img>
+      </a>
+    </div>
+  </div>
+  <div class="wl-logo">
+    <hr>
+  <img src="../images/wrangler-logo.png" alt="wrangler">
+  <hr>
+</div>
 
 </section>
 
