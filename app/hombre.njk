@@ -1,11 +1,14 @@
-{% extends "layouts/default.njk" %} {% block content %} {% import 'macros/navbar.njk' as nav %} {{nav.active('index')}}
+{% extends "layouts/default.njk" %} 
+{% block content %} {% import 'macros/product-thumb.njk' as field %}
+{% import 'macros/navbar.njk'as nav %} 
+{{nav.active('index')}}
 
 <section class="wl-banner">
   <div class="swiper-container">
     <div class="swiper-wrapper">
       <div id="slider1" class="swiper-slide">
         <div class="container">
-          <div class="wl-textoBanner mujer">
+          <div class="wl-textoBanner">
             <h2>
               <span class="firstWord">SEVENTY</span>
               <br/>
@@ -21,7 +24,7 @@
               <br/> 4% Elastano.</p>
             <a class="wl-btn" href="#" title="Conoce más">
               <span>CONOCE MÁS</span>
-            </a>            
+            </a>
           </div>
           <img class="imgSlider1" src="../images/wl-jeansBanner-mujer.png">
         </div>
@@ -30,9 +33,46 @@
     <!-- Add Pagination -->
     <div class="swiper-pagination"></div>
   </div>
-  
 </section>
 
+<section class="wl-category">
+  <h2>Hombre </h2>
+  <p>LOREM IPSUM DOLOR SIT AMET</p>
+  <div class="row">
+    {{ field.field('2000341309044') }}
+    {{ field.field('2000341309044') }}
+    {{ field.field('2000341309044') }}
+    {{ field.field('2000341309044') }}
+  </div>
 </section>
 
-{% endblock %}
+<section class="wl-social">
+  <div class="iconosSocial">
+    <div class="wl-iconos__container">
+      <a href="#">
+        <img src="../images/svg/icon-fb.svg">
+        </img>
+      </a>
+
+    </div>
+    <div class="wl-iconos__container">
+      <a href="#">
+        <img src="../images/svg/icon-insta.svg">
+        </img>
+      </a>
+
+    </div>
+    <div class="wl-iconos__container">
+      <a href="#">
+        <img src="../images/svg/icon-you.svg">
+        </img>
+      </a>
+    </div>
+  </div>
+  <div class="wl-logo">
+    <hr>
+    <img src="../images/wrangler-logo.png" alt="wrangler">
+    <hr>
+  </div>
+
+  {% endblock %}

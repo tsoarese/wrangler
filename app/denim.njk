@@ -1,0 +1,25 @@
+{% extends "layouts/default.njk" %} {% block content %} {% import 'macros/navbar.njk' as nav %} {{nav.active('index')}}
+
+<section class="wl-bannerDemin container">
+  <div class="wl-containerLeft">
+      <img src="../images/wl-bannerDemin.jpg" alt="denim">
+    
+      <div class="wl-text">
+          <object type="image/svg+xml" data="../images/svg/triangulo.svg">
+            Tu navegador no soporta imagenes svg
+        </object>
+        <div class="textContainer">
+      <h2>DENIM</h2>
+      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
+  vitae.</p>
+      </div>
+    </div>
+    </div>
+    <div class="wl-containerRight">
+      <img class="wl-bg" src="../images/wl-bannerDemin2.jpg" alt="denim">
+    </div>
+
+</section>
+
+
+{% endblock %}
