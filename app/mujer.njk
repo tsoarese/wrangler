@@ -1,6 +1,6 @@
-{% extends "layouts/default.njk" %} 
-{% block content %} {% import 'macros/product-thumb.njk' as field %}
-{% import 'macros/navbar.njk'as nav %} 
+{% extends "layouts/default.njk" %}
+{% block content %} {% import 'macros/product-thumb.njk' as field %} 
+{% import 'macros/navbar.njk'as nav %}
 {{nav.active('index')}}
 
 <section class="wl-banner">
@@ -36,7 +36,7 @@
 </section>
 
 <section class="wl-category">
-  <h2>Hombre </h2>
+  <h2>Mujer</h2>
   <p>LOREM IPSUM DOLOR SIT AMET</p>
   <div class="row">
     {{ field.field('2000341309044') }}
@@ -74,6 +74,5 @@
     <img src="../images/wrangler-logo.png" alt="wrangler">
     <hr>
   </div>
-  </section>
-
+</section>
   {% endblock %}

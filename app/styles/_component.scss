@@ -179,14 +179,28 @@
     }
     .wl-bannerDemin {
         display: flex;
-        
+            max-height: 508px;
+            @media  (max-width: $maxdesktop) and (min-width: $desktop) {
+                max-height: 430px;
+            }
+
+            @media (max-width: $tablet) {
+                max-height: 326px;
+            }
+
+            @media (max-width: $mobile) {
+                max-height: 508px;;
+            }
+
+
+
         .wl-containerLeft {
             flex: 1 1 50%;
             position: relative;
-            @media  (max-width: $mobile){
+            @media (max-width: $mobile) {
                 min-height: 500px;
             }
-            .wl-text{
+            .wl-text {
                 color: $color-secundario;
                 display: flex;
                 flex-direction: column;
@@ -195,42 +209,75 @@
                 top: 50%;
                 transform: translate(-50%, -50%);
                 width: 80%;
-                display: flex;
-                /* justify-content: center; */
                 align-items: center;
                 text-align: center;
-                @media  (max-width: $tablet){
-                    top: 43%;
-
-                }
-                object{
-                    @media  (max-width: $mobile){
-                        width: 100%;
+                .wl-icon {
+                    align-items: center;
+                    display: flex;
+                    margin: auto;
+                    width: 100%;
+                    hr {
+                        border: solid $color-secundario 0.5px;
+                        flex: 1 1 auto;
+                        max-width: 98px;
+                        @media (max-width: $tablet) {
+                            max-width: 70px;
+                        }
+                        @media (max-width: $mobile) {
+                            max-width: 98px;
+                        }
                     }
-
-                    @media  (max-width: $tablet){
-                        width: 20%;
-                        position: relative;
-                        top: 28px;
+                        
                     }
+                    object {
+                        
+                        width: 91px;
+                        margin: 0 -30px;
+                        @media  (max-width: $maxdesktop) and (min-width: $desktop) {
+                            margin: 0 0;
+                        }
+                        
+                        @media (max-width: $tablet){
+                            margin: 0 0;
+                            width: 70px;
+                    }
+                        @media (max-width: $mobile) {
+                            width: 91px;
+                            margin: 0 15px;
+                        
+                     }
                 }
-                h2{
-                    font-size: 100px;
+                h2 {
+                    font-size: 124px;
                     font-weight: 800;
-                    @media  (max-width: $tablet){
+                    line-height: 124px;
+
+                    @media  (max-width: $maxdesktop) and (min-width: $desktop) {
+                        font-size: 100px;
+                    }
+                    @media (max-width: $tablet) {
                         font-size: 75px;
+                        line-height: 60px;
+                        margin-bottom: 10px;
+                    }
+                    @media (max-width: $tablet){
+                        font-size: 80px;
+                        line-height: 90px;
                     }
                 }
-                p{
+                p {
                     padding-left: 5px;
                 }
-                
             }
-
+            img{
+                @media (max-width: $mobile){
+                    height: 508px;
+                }
+            }
         }
         .wl-containerRight {
             flex: 1 1 50%;
-            @media  (max-width: $mobile){
+            @media (max-width: $mobile) {
                 display: none;
             }
         }
@@ -367,6 +414,56 @@
                 color: white;
                 left: 50%;
                 top: 50%;
+            }
+        }
+    }
+    .wl-tabsImages{
+        display: flex;
+        .wl-tabsContainers{
+            flex: 1 1 33%;
+            position: relative;
+            .text{
+                color: $color-secundario;
+                display: flex;
+                flex-direction: column;
+                left: 50%;
+                position: absolute;
+                top: 80%;
+                transform: translate(-50%, -50%);
+                align-items: center;
+                text-align: center;
+
+                @media  (max-width: $mobile) {
+                    top: 60%;
+                }
+                h2{
+                    font-size: 45px;
+                    color: $color-secundario;
+                    font-weight: 800;
+                    @media  (max-width: $maxdesktop) and (min-width: $desktop) {
+                        font-size: 35px;
+                    }
+                    @media  (max-width: $tablet) {
+                        font-size: 25px;
+                    }
+                    @media  (max-width: $mobile) {
+                        font-size: 15px;
+                    }
+
+
+                }
+                a{
+                    min-width: 150px;
+                    @media (max-width: $tablet){
+                        min-width: 75px;
+                        padding: 8px 0px;
+                        font-size: 12px;
+                    }              
+
+                    @media (max-width: $mobile){
+                        display: none;
+                    }
+                }
             }
         }
     }

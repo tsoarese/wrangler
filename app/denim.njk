@@ -1,24 +1,110 @@
-{% extends "layouts/default.njk" %} {% block content %} {% import 'macros/navbar.njk' as nav %} {{nav.active('index')}}
+{% extends "layouts/default.njk" %}
+{% block content %}
+{% import 'macros/product-thumb.njk' as field %}
+{% import 'macros/navbar.njk' as nav %}
+{{nav.active('index')}}
 
 <section class="wl-bannerDemin container">
   <div class="wl-containerLeft">
-      <img src="../images/wl-bannerDemin.jpg" alt="denim">
-    
-      <div class="wl-text">
-          <object type="image/svg+xml" data="../images/svg/triangulo.svg">
-            Tu navegador no soporta imagenes svg
+    <img src="../images/wl-bannerDemin.jpg" alt="denim">
+
+    <div class="wl-text">
+      <div class="wl-icon">
+        <hr>
+        <object type="image/svg+xml" data="../images/svg/triangulo.svg">
+          Tu navegador no soporta imagenes svg
         </object>
-        <div class="textContainer">
-      <h2>DENIM</h2>
-      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
-  vitae.</p>
+        <hr>
+      </div>
+      <div class="textContainer">
+        <h2>DENIM</h2>
+        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
+          vitae.
+        </p>
       </div>
     </div>
+  </div>
+  <div class="wl-containerRight">
+    <img class="wl-bg" src="../images/wl-bannerDemin2.jpg" alt="denim">
+  </div>
+
+</section>
+
+<section class="wl-tabsImages container">
+
+  <div class="wl-tabsContainers">
+    <img src="../images/iconbg.jpg" alt="CHAQUETAS">
+    <div class="text">
+      <h2>ICON</h2>
+      <a class="wl-btn" href="#" title="Conoce más">
+        <span>VER</span>
+      </a>
     </div>
-    <div class="wl-containerRight">
-      <img class="wl-bg" src="../images/wl-bannerDemin2.jpg" alt="denim">
+  </div>
+
+  <div class="wl-tabsContainers">
+    <img src="../images/jeansbg.jpg" alt="CHAQUETAS">
+    <div class="text">
+      <h2>JEANS</h2>
+      <a class="wl-btn" href="#" title="Conoce más">
+        <span>VER</span>
+      </a>
     </div>
 
+  </div>
+
+  <div class="wl-tabsContainers">
+    <img src="../images/chaquetasbg.jpg" alt="CHAQUETAS">
+    <div class="text">
+      <h2>CHAQUETAS</h2>
+      <a class="wl-btn" href="#" title="Conoce más">
+        <span>VER</span>
+      </a>
+    </div>
+  </div>
+
+
+
+</section>
+
+
+<section class="wl-category">
+  <h2>JEANS</h2>
+  <p>LOREM IPSUM DOLOR SIT AMET</p>
+  <div class="row">
+    {{ field.field('2000341309044') }} {{ field.field('2000341309044') }} {{ field.field('2000341309044') }} {{ field.field('2000341309044')
+    }}
+  </div>
+</section>
+
+<section class="wl-social">
+  <div class="iconosSocial">
+    <div class="wl-iconos__container">
+      <a href="#">
+        <img src="../images/svg/icon-fb.svg">
+        </img>
+      </a>
+
+    </div>
+    <div class="wl-iconos__container">
+      <a href="#">
+        <img src="../images/svg/icon-insta.svg">
+        </img>
+      </a>
+
+    </div>
+    <div class="wl-iconos__container">
+      <a href="#">
+        <img src="../images/svg/icon-you.svg">
+        </img>
+      </a>
+    </div>
+  </div>
+  <div class="wl-logo">
+    <hr>
+    <img src="../images/wrangler-logo.png" alt="wrangler">
+    <hr>
+  </div>
 </section>
 
 
