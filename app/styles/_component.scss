@@ -121,7 +121,7 @@
             }
         }
     }
-    .wl-bannerHome {
+    .wl-bannerHombreMujer {
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover !important;
@@ -179,7 +179,7 @@
     }
     .wl-bannerDemin {
         display: flex;
-            max-height: 508px;
+            max-height: 505px;
             @media  (max-width: $maxdesktop) and (min-width: $desktop) {
                 max-height: 430px;
             }
